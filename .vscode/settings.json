@@ -1,0 +1,6 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/windows/flutter",
+    "dart.flutterShowEmulators": "never",
+    "editor.stickyTabStops": true,
+    "workbench.experimental.editSessions.enabled": true
+}
