@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:instagram_ui/page/account_page.dart';
@@ -7,6 +8,7 @@ import 'package:instagram_ui/page/reels_page.dart';
 import 'package:instagram_ui/page/search_page.dart';
 import 'package:instagram_ui/page/shopp_page.dart';
 
+// ignore: camel_case_types
 class nav_bar extends StatefulWidget {
   @override
   State<nav_bar> createState() => _nav_barState();
@@ -21,18 +23,18 @@ class _nav_barState extends State<nav_bar> {
     });
   }
 
-  List<Widget> pages =[
-     home_page(),
-     search_page(),
-     reels_page(),
-     shopp_page(),
-     account_page()
+  List<Widget> pages = [
+    home_page(),
+    search_page(),
+    reels_page(),
+    shopp_page(),
+    account_page()
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: pages[_index],
+        body: pages[_index],
         //backgroundColor: Colors.black12,
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
