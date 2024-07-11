@@ -1,8 +1,5 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 
 class user_aktif extends StatelessWidget {
   const user_aktif({
@@ -30,8 +27,8 @@ class user_aktif extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(5.0),
+          const   Padding(
+              padding:  EdgeInsets.all(5.0),
               child: CircleAvatar(
                 radius: 8,
                 backgroundColor: Colors.white,
@@ -46,7 +43,7 @@ class user_aktif extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 5.0),
           child: Text(usr_aktif,
-              style: TextStyle(
+              style: const  TextStyle(
                 fontSize: 12,
               ),
               overflow: TextOverflow.ellipsis,

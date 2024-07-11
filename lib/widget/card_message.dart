@@ -1,7 +1,5 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 
 class card_massage extends StatelessWidget {
   const card_massage({
@@ -17,15 +15,15 @@ class card_massage extends StatelessWidget {
       child: ListTile(
         title: Text(
           name_chat,
-          style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),
+          style: const TextStyle(color: Colors.black,fontWeight: FontWeight.bold),
         ),
-        subtitle: Text(
+        subtitle:const  Text(
           'Terkirim',
           style: TextStyle(color: Colors.black, fontSize: 12),
         ),
         trailing: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.camera_alt_outlined),
+          icon: const Icon(Icons.camera_alt_outlined),
         ),
         leading: CircleAvatar(
           radius: 30,

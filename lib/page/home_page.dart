@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:instagram_ui/page/message_page.dart';
+import 'package:flutter/material.dart';
 import 'package:instagram_ui/widget/post.dart';
 import 'package:instagram_ui/widget/story.dart';
+import 'package:flutter/src/widgets/container.dart';
+import 'package:flutter/src/widgets/framework.dart';
+import 'package:instagram_ui/page/message_page.dart';
 
 class home_page extends StatefulWidget {
   const home_page({super.key});
@@ -47,7 +47,7 @@ class _home_pageState extends State<home_page> {
                       onPressed: () {},
                       icon: SvgPicture.asset('asset/icons/Heart.svg',
                           color: Colors.black)),
-                  Padding(
+            const       Padding(
                     padding: const EdgeInsets.all(12.0),
                     child: CircleAvatar(
                       radius: 5,
@@ -74,7 +74,7 @@ class _home_pageState extends State<home_page> {
             mainAxisSize: MainAxisSize.min,
             children: [
               SizedBox(
-                height: 95,
+                height: 100,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: user.length,

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:instagram_ui/nav_bar.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      color: Colors.white,
       title: 'Instagram_UI',
       debugShowCheckedModeBanner: false,
       home: nav_bar(),

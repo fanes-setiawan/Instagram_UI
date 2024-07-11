@@ -1,13 +1,10 @@
-import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:instagram_ui/page/home_page.dart';
-import 'package:instagram_ui/page/search_page.dart';
-import 'package:instagram_ui/widget/card_message.dart';
 import 'package:instagram_ui/widget/search.dart';
 import 'package:instagram_ui/widget/user_aktif.dart';
+import 'package:instagram_ui/widget/card_message.dart';
 
+
+// ignore: must_be_immutable
 class message_page extends StatelessWidget {
   List user = [
     'aldi.enc',
@@ -32,10 +29,10 @@ class message_page extends StatelessWidget {
           onPressed: () {
             // Navigator.push(context, MaterialPageRoute(builder: (context)=> home_page()));
           },
-          icon: Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back),
           color: Colors.black,
         ),
-        title: Text(
+        title: const Text(
           'fanes4444',
           style: TextStyle(
               color: Colors.black, fontSize: 17, fontWeight: FontWeight.bold),
@@ -45,11 +42,11 @@ class message_page extends StatelessWidget {
             children: [
               IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.video_call_outlined),
+                  icon: const Icon(Icons.video_call_outlined),
                   color: Colors.black),
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.add),
+                icon: const Icon(Icons.add),
                 color: Colors.black,
               ),
             ],
@@ -63,14 +60,14 @@ class message_page extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 15, right: 15, top: 10),
                 child: SizedBox(
-                  height: 35,
+                  height: 40,
                   child: widget_search(),
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 8.0, left: 8.0, right: 8.0),
                 child: SizedBox(
-                  height: 85,
+                  height: 90,
                   child: ListView.builder(
                     scrollDirection: Axis.horizontal,
                     itemCount: user.length,
@@ -85,14 +82,14 @@ class message_page extends StatelessWidget {
                 children: [
                   TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child: const Text(
                       'Pesan',
                       style: TextStyle(color: Colors.black, fontSize: 16),
                     ),
                   ),
                   TextButton(
                     onPressed: () {},
-                    child: Text(
+                    child:const  Text(
                       'Permintaan',
                       style: TextStyle(color: Colors.blue, fontSize: 16),
                     ),
@@ -104,7 +101,7 @@ class message_page extends StatelessWidget {
                 child: Flexible(
                   child: ListView.builder(
                     scrollDirection: Axis.vertical,
-                    physics: NeverScrollableScrollPhysics(),
+                    physics:const  NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
                     itemCount: user_chat.length,
                     itemBuilder: (context, index) {

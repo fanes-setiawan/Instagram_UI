@@ -1,10 +1,7 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 
-import 'package:instagram_ui/nav_bar.dart';
 
 class reels extends StatelessWidget {
   const reels({
@@ -19,12 +16,12 @@ class reels extends StatelessWidget {
       child: Container(
         // width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height - 85,
-        decoration: BoxDecoration(color: Colors.black),
+        decoration:const  BoxDecoration(color: Colors.black),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(10),
+          const   Padding(
+              padding:  EdgeInsets.all(10),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -54,7 +51,7 @@ class reels extends StatelessWidget {
                         icon: SvgPicture.asset('asset/icons/Heart.svg',
                             color: Colors.white),
                       ),
-                      Text(
+                  const     Text(
                         '65,2rb',
                         style: TextStyle(color: Colors.white, fontSize: 12),
                       ),
@@ -63,7 +60,7 @@ class reels extends StatelessWidget {
                         icon: SvgPicture.asset('asset/icons/Comment.svg',
                             color: Colors.white),
                       ),
-                      Text(
+                    const   Text(
                         '2.900',
                         style: TextStyle(color: Colors.white, fontSize: 12),
                       ),
@@ -72,7 +69,7 @@ class reels extends StatelessWidget {
                         icon: SvgPicture.asset('asset/icons/Share.svg',
                             color: Colors.white),
                       ),
-                      Text(
+                  const     Text(
                         '102',
                         style: TextStyle(color: Colors.white, fontSize: 12),
                       ),
@@ -98,7 +95,7 @@ class reels extends StatelessWidget {
                           Padding(
                             padding: const EdgeInsets.all(5.0),
                             child: Text(name_user,
-                                style: TextStyle(
+                                style:const  TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color: Colors.white)),
                           ),
@@ -113,7 +110,7 @@ class reels extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(5)),
                               child: TextButton(
                                 onPressed: () {},
-                                child: Center(
+                                child:const  Center(
                                   child: Text(
                                     'ikuti',
                                     style: TextStyle(color: Colors.white),
@@ -124,8 +121,8 @@ class reels extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
+                    const   Padding(
+                        padding:  EdgeInsets.all(8.0),
                         child: Icon(
                           Icons.more_vert,
                           color: Colors.white,
@@ -138,7 +135,7 @@ class reels extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
                     children: [
-                      Text(
+                  const     Text(
                         'ini adalah reels anda dapat menuliskan diskripsi dari reels anda pada bagian ini',
                         style: TextStyle(color: Colors.white, fontSize: 15),
                         overflow: TextOverflow.ellipsis,
@@ -147,7 +144,7 @@ class reels extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Padding(
+                  const         Padding(
                             padding: EdgeInsets.only(top: 10),
                             child: Row(
                               children: [

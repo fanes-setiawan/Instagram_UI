@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:instagram_ui/widget/reels.dart';
 
-import '../widget/story.dart';
 
 class reels_page extends StatefulWidget {
   const reels_page({super.key});
@@ -25,7 +22,7 @@ class _reels_pageState extends State<reels_page> {
   ];
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
       child: ListView.builder(

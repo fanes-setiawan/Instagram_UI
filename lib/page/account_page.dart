@@ -1,11 +1,8 @@
-import 'dart:ui';
-
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:instagram_ui/widget/save_story.dart';
 
+
+// ignore: must_be_immutable
 class account_page extends StatelessWidget {
   final bool _pinned = true;
   List url=[
@@ -19,7 +16,7 @@ class account_page extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0,
-        title: Text(
+        title: const Text(
           'fanes4444',
           style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
         ),
@@ -28,11 +25,11 @@ class account_page extends StatelessWidget {
             children: [
               IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.add_box_outlined),
+                  icon:const  Icon(Icons.add_box_outlined),
                   color: Colors.black),
               IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.format_list_bulleted),
+                  icon:const  Icon(Icons.format_list_bulleted),
                   color: Colors.black)
             ],
           )
@@ -43,7 +40,7 @@ class account_page extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Column(
+          const     Column(
                 children: [
                   SizedBox(
                     height: 90,
@@ -111,13 +108,13 @@ class account_page extends StatelessWidget {
                   ),
                 ],
               ),
-              Row(
+        const       Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 20),
-                    child: Container(
-                      height: 35,
+                    padding:  EdgeInsets.only(left: 20),
+                    child: SizedBox(
+                      height: 40,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -143,9 +140,9 @@ class account_page extends StatelessWidget {
                       width: MediaQuery.of(context).size.width - 100,
                       height: 30,
                       decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 228, 227, 227),
+                          color:const  Color.fromARGB(255, 228, 227, 227),
                           borderRadius: BorderRadius.circular(5)),
-                      child: Center(
+                      child: const Center(
                         child: Text('Edit Profil'),
                       ),
                     ),
@@ -155,9 +152,9 @@ class account_page extends StatelessWidget {
                         width: 50,
                         height: 30,
                         decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 228, 227, 227),
+                            color:const  Color.fromARGB(255, 228, 227, 227),
                             borderRadius: BorderRadius.circular(5)),
-                        child: Center(
+                        child: const Center(
                           child: Icon(
                             Icons.person_add_outlined,
                             size: 18,
@@ -172,7 +169,7 @@ class account_page extends StatelessWidget {
                 data: Theme.of(context)
                     .copyWith(dividerColor: Colors.transparent),
                 child: ExpansionTile(
-                  title: Text(
+                  title:const  Text(
                     'Sorotan Cerita',
                     style: TextStyle(
                         fontWeight: FontWeight.bold,
@@ -180,8 +177,8 @@ class account_page extends StatelessWidget {
                         color: Colors.black),
                   ),
                   children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 18),
+                  const   Padding(
+                      padding:  EdgeInsets.only(left: 18),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -191,7 +188,7 @@ class account_page extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(left: 18),
-                      child: Container(
+                      child: SizedBox(
                         width: double.infinity,
                         height: 90,
                         child: ListView.builder(
@@ -223,9 +220,9 @@ class account_page extends StatelessWidget {
                           pinned: _pinned,
                           toolbarHeight: 0,
                           backgroundColor: Colors.white,
-                          bottom: TabBar(
+                          bottom:const  TabBar(
                             indicatorColor: Colors.black,
-                            tabs: [
+                            tabs:  [
                               Tab(
                                 child: Icon(
                                   Icons.apps,
@@ -250,7 +247,7 @@ class account_page extends StatelessWidget {
                           physics: const NeverScrollableScrollPhysics(),
                           itemCount: 3,
                           gridDelegate:
-                              SliverGridDelegateWithFixedCrossAxisCount(
+                          const     SliverGridDelegateWithFixedCrossAxisCount(
                                   crossAxisCount: 3,
                                   mainAxisSpacing: 1,
                                   crossAxisSpacing: 1),
@@ -265,7 +262,7 @@ class account_page extends StatelessWidget {
                             );
                           },
                         ),
-                        Text(
+                      const   Text(
                           'no picture',
                           style: TextStyle(color: Colors.black),
                         ),
